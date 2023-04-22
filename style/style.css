@@ -15,10 +15,13 @@
     --button-radius: 35px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font_1);
     font-size: var(--font_size);
-    box-sizing: border-box;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -33,6 +36,9 @@ body {
     max-width: 1352px;
     margin: 0 auto;
     display: flex;
+}
+
+.header .container {
     justify-content: space-between;
 }
 
@@ -94,14 +100,107 @@ nav ul {
     font-weight: bold;
     border: none;
     border-radius: var(--button-radius);
+    cursor: pointer;
+    font-family: var(--font_2);
+    color: var(--color-white);
 }
 
-.opening_section .container a:nth-child(3) {
-    font-family: var(--font_2);
+.button1 {
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
     font-size: var(--font_size);
-    color: var(--color-white);
     background-color: var(--color-primary);
     padding: 22px 157px 23px;
 }
+
+.button1:hover {
+    text-shadow: 4px 6px 12px var(--color-secondary-shadow);;
+}
+
+.button1:active {
+    box-shadow: inset 3px 3px 6px var(--color-secondary-shadow);
+}
+
+.statistics {
+    background-color: var(--color-white);
+}
+
+.statistics .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: var(--font_1);
+    font-size: 2.25em;
+    color: var(--color-black);
+    padding: var(--padding-100) 0;
+}
+
+.statistics_column {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.statistics_column article span {
+    display: block;
+    margin: 0 auto;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-redish);
+}
+
+.statistics_column article:nth-child(2) span {
+    background-color: var(--color-primary);
+}
+
+.statistics_column article:nth-child(3) span {
+    background-color: var(--color-green);
+}
+
+.article {
+    position: relative;
+    font-size: var(--font_size);
+}
+
+.statistics_column .article img {
+    position: absolute;
+    left: 50%;
+    top: calc(63px / 2 - 52px / 2);
+}
+
+.statistics_column .article:nth-child(2) img {
+    top: calc(63px / 2 - 36.5px / 2);
+}
+
+.statistics_column .article:nth-child(3) img {
+    top: calc(63px / 2 - 48px / 2);
+}
+
+.statistics_column .article p {
+    font-family: var(--font_1);
+    font-size: 1.25em;
+    font-weight: 800;
+    color: var(--color-black);
+    text-align: center;
+    letter-spacing: 6px;
+    padding: 13px 0 19px;
+}
+
+.statistics_column .article p:last-of-type {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--color-grey);
+    text-align: center;
+    padding: 0 0 100px;
+}
+
+
+
+
+
+
+
 
 
