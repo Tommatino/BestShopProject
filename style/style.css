@@ -11,6 +11,7 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
+    --padding-100: 100px;
     --button-radius: 35px;
 }
 
@@ -18,15 +19,18 @@ body {
     font-family: var(--font_1);
     font-size: var(--font_size);
     box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
-    width: 100vw;
-    box-shadow: 0px 3px 6px var(--color-secondary-shadow);
+    position: relative;
+    box-shadow: 0 3px 6px var(--color-secondary-shadow);
 }
 
 .container {
-    width: 1352px;
+    width: 100%;
+    max-width: 1352px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -42,6 +46,7 @@ body {
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 .nav_button {
@@ -51,12 +56,52 @@ nav ul {
     padding: 28px 5px 27px;
     text-align: center;
     margin-left: 90px;
+    border-bottom: 4px solid transparent;
 }
 
 .nav_button:hover {
     color: var(--color-black);
     font-weight: bold;
-    border-bottom: 4px solid var(--color-primary);
+    border-bottom-color: var(--color-primary);
     cursor: pointer;
 }
+
+.opening_section {
+    background-color: var(--color-white);
+}
+
+.opening_section .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-family: var(--font_1);
+    font-size: 3.0625em;
+    color: var(--color-black);
+    padding: 130px 0 20px;
+}
+
+.opening_section .container p:nth-child(2) {
+    font-family: var(--font_2);
+    padding-bottom: 38px;
+    font-size: var(--font_size);
+    color: var(--color-black);
+}
+
+.page_button {
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button-radius);
+}
+
+.opening_section .container a:nth-child(3) {
+    font-family: var(--font_2);
+    font-size: var(--font_size);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 22px 157px 23px;
+}
+
 
