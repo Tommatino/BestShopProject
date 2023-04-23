@@ -257,7 +257,7 @@ h2 {
     z-index: 20;
 }
 
-.article2 div:nth-child(2) {
+.article2 div:nth-child(1), .article2 div:nth-child(2) {
     position: relative;
 }
 
@@ -277,6 +277,14 @@ h2 {
     right: 0;
 }
 
+.figure2 {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    top: -15px;
+    left: 0;
+}
 
 
 
