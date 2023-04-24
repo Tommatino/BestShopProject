@@ -112,11 +112,11 @@ nav ul {
     padding: 22px 157px 23px;
 }
 
-.button1:hover, .button_basic:hover, .button_professional:hover, .button_premium:hover {
+.button1:hover, .button_basic:hover, .button_professional:hover, .button_premium:hover, .contact_button:hover {
     text-shadow: 4px 6px 12px var(--color-secondary-shadow);;
 }
 
-.button1:active, .button_basic:active, .button_professional:active, .button_premium:active {
+.button1:active, .button_basic:active, .button_professional:active, .button_premium:active, .contact_button:active {
     box-shadow: inset 3px 3px 6px var(--color-secondary-shadow);
 }
 
@@ -319,6 +319,11 @@ h2 {
     border-radius: 5px;
 }
 
+.price_list {
+    background-color: var(--color-white);
+    padding-bottom: 155px;
+}
+
 .price_list .container {
     flex-direction: column;
     align-items: center;
@@ -372,7 +377,7 @@ p.p_pricing {
     padding: 34px 0 14px;
 }
 
-.article3 .limited_offer {
+.article3 .basic .limited_offer {
     color: transparent;
 }
 
@@ -470,6 +475,125 @@ div.frame .list {
     left: calc(50% - 79.32px);
     top: calc(100% - 24px);
 }
+
+.contact {
+    background-color: var(--color-white);
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 59px;
+}
+
+.west_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.west_column h3 {
+    font-size: 3.0625em;
+    color: var(--color-black);
+    padding-bottom: 22px;
+    padding-right: 114px;
+}
+
+.west_column p, .west_column div, .east_column {
+    font-family: var(--font_2);
+}
+
+.west_column p {
+    padding-bottom: 42px;
+}
+
+.contact_img {
+    display: flex;
+    color: var(--color-grey);
+}
+
+.img_email, .img_phone {
+    padding-right: 10px;
+}
+
+.img_phone {
+    padding-left: 20px;
+}
+
+.east_column {
+    width: 32.5444%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+
+.label_1_2 {
+    color: var(--color-primary);
+    font-size: 0.6875em;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.east_column label:last-of-type {
+    color: var(--color-grey);
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+input[type="text"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    height: 40px;
+}
+
+input[type="text"] {
+    margin-bottom: 42px;
+}
+
+input[type="email"] {
+    margin-bottom: 30px;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 77px;
+}
+
+.checkbox span {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact_button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px 97px;
+    background-color: var(--color-primary);
+}
+
+
 
 
 
